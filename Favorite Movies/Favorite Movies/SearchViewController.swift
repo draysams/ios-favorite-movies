@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         print("Searching for \(self.searchText.text!)")
         
         var searchTerm = searchText.text!
-        if searchTerm.characters.count > 2 {
+        if searchTerm.count > 2 {
             retrieveMoviesByTerm(searchTerm: searchTerm)
         }
     }
